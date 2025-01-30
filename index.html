@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm  <span>Rishika</span> <br> From India </h1>
+            </div>
+        </div>
+
+    </div>
+    <!-- ----------about----------->
+    <div id="about"></div>
+       <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/user.png">
+                
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> Hello! I'm Rishika, a skilled and passionate web designer with experience in creating user-friendly and high-performing websites.
+                    With expertise in HTML, CSS, JavaScript, React.js, and UI/UX design, I focus on creating seamless digital experiences that are both functional and engaging.
+                     My goal is to design and develop responsive, accessible, and intuitive websites that enhance user interaction and drive business success.
+                     Let's connect and create something amazing together! </p>
+
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX:</span><br>Designing Web/App interfaces</li>
+                            <li><span>Programming Languages:</span><br>Proficient in C and C++.</li>
+                            <li><span>Web Technologies:</span><br>Skilled in HTML, CSS, Tailwind, JavaScript, React.js and Redux.</li>
+                            <li><span>Tools:</span><br>Experienced with Git, GitHub, VS Code.</li>
+
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-Current:</span><br>B.Tech in Computer Science Engineering from Dr. APJ Abdul Kalam Women's Institute of Technology, Darbhanga, Bihar</li>
+                            <li><span>2019-2021:</span><br>Intermediate from +2H/S Keshori, Pakribarawan, Nawada, Bihar</li>
+                            <li><span>2018-2019:</span><br>Matriculation from Dr. D.Ram DAV Public School, Patna, Bihar</li>
+                         
+
+                        </ul>
+                        <div class="tab-contents" id="experience">
+                           Fresher
+                     </div>
+            </div>
+        </div>
+       </div>
+
+       <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/Blogging.jpg">
+                    <div class="layer">
+                        <h3>Blogging Platform</h3>
+                        <p>It acts as a digital diary where users can document their personal journeys.
+                           Designed using React.js, JavaScript and CSS. 
+                        </p>
+                        <a href="#"> <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Flipkart clone.jpg">
+                    <div class="layer">
+                        <h3>Flipkart Clone</h3>
+                        <p>It provides a seamless shopping experience.
+                            It implements features like sorting, secure login and cart management.</p>
+                            <a href="#"> <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/URL Abbreviator.jpg">
+                    <div class="layer">
+                        <h3>Web Address Shortener</h3>
+                        <p>It used to shorten long URLs into concise, shareable links.
+                            Implemented URL encoding and decoding logic to ensure efficient link generation.</p>
+                            <a href="#"> <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+       </div>
+
+       
+       <script>
+          var tablinks=document.getElementsByClassName("tab-links");
+          var tabcontents=document.getElementsByClassName("tab-contents");
+          function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tablink.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+          }
+       </script>
+</body>
+</html>
