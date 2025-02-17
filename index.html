@@ -69,43 +69,71 @@
         </div>
        </div>
 
-       <div id="projects">
-        <div class="container">
-            <h1 class="sub-title">Projects</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="Images/Blogging.jpg">
-                    <div class="layer">
-                        <h3>Blogging Platform</h3>
-                        <p>It acts as a digital diary where users can document their personal journeys.
-                           Designed using React.js, JavaScript and CSS. 
-                        </p>
-                        <a href="#"> <i class="fas fa-external-link-alt"></i></a>
-                    </div>
+   <!--------------projects------------> 
+   <div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/URL Abbreviator.jpg">
+                <div class="layer">
+                    <h3>Web Address Shortener</h3>
+                    <p>It used to shorten URLs into concise, shareable links.
+                        Implemented URL encoding and decoding logic to ensure efficient link generation.
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+
                 </div>
-                <div class="work">
-                    <img src="Images/Flipkart clone.jpg">
-                    <div class="layer">
-                        <h3>Flipkart Clone</h3>
-                        <p>It provides a seamless shopping experience.
-                            It implements features like sorting, secure login and cart management.</p>
-                            <a href="#"> <i class="fas fa-external-link-alt"></i></a>
-                    </div>
+             </div>
+             <div class="work">
+                <img src="images/Flipkart clone.jpg">
+                <div class="layer">
+                    <h3>Flipkart Clone</h3>
+                    <p>It provides a seamless shopping experience. 
+                        It implements features like sorting, secure login and cart management.
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+
                 </div>
-                <div class="work">
-                    <img src="Images/URL Abbreviator.jpg">
-                    <div class="layer">
-                        <h3>Web Address Shortener</h3>
-                        <p>It used to shorten long URLs into concise, shareable links.
-                            Implemented URL encoding and decoding logic to ensure efficient link generation.</p>
-                            <a href="#"> <i class="fas fa-external-link-alt"></i></a>
-                    </div>
+             </div>
+             <div class="work">
+                <img src="images/Blogging.jpg">
+                <div class="layer">
+                    <h3>Blogging Platform</h3>
+                    <p>It acts as a digital diary where users can document their personal journeys.
+                        Designed using React.js, JavaScript and CSS.
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+
+                </div>
+             </div>
+             </div>
+             <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+<!-------------Contact-------------->    
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact</h1>
+                <p>rishikasingh2109@gmail.com</p>
+                <p>7480908099</p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fab fa-telegram"></i></a>
                 </div>
             </div>
-            <a href="#" class="btn">See more</a>
-        </div>
-       </div>
 
+        </div>
+    </div>
+
+   </div>
+
+       
+                          
        
        <script>
           var tablinks=document.getElementsByClassName("tab-links");
@@ -115,7 +143,7 @@
                 tablink.classList.remove("active-link");
             }
             for(tabcontent of tabcontents){
-                tablink.classList.remove("active-tab");
+                tabcontent.classList.remove("active-tab");
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
